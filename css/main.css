@@ -1,0 +1,13 @@
+@import "bootstrap.min.css";
+@import "mdb.min.css";
+.link-2{
+    font-size: 14px;
+}
+.navbar-2{
+    height: 50px!important
+}
+.card-2{
+    -webkit-box-shadow:none!important;
+    box-shadow: none!important;
+    background-color:#fff0;
+}
