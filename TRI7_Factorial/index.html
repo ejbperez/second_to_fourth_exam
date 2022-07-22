@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<section class="container-fluid blue-grey lighten-5 py-5">
+    <div class="container">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <p class="h4 text-center ">Factorial Exam</p>
+        
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input" placeholder="Enter Number" aria-label="Enter Number"
+                    aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary m-0 px-5 py-2 z-depth-0 waves-effect" type="button" id="calculate">Calculate</button>
+                    </div>
+                </div>
+                <span>Result: </span><span class="font-weight-bold" id="result"></span>
+            </form>
+        </div>
+    </div>
+    </div>  
+</section>
+
+<script>
+
+    function factorial(n) {
+        if(n<=1){
+            return 1;
+        }else{
+            return n * factorial(n - 1);
+        }
+    }
+    $("#calculate").click(function(){
+        let value = $("#input").val()
+        $("#result").text(factorial(value))
+        // console.log(factorial(value));
+    })
+
+    
+</script>
+
+</body>
+</html>
