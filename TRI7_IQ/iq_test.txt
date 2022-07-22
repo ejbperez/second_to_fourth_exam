@@ -10,5 +10,5 @@
 4. Answer: 4
    Explaination: The shape changed its position also the shade per part
 
-4. Answer: 3
+5. Answer: 3
    Explaination: Based on two last part, the two shapes slowly moves closer until they combined
